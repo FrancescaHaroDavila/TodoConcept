@@ -7,5 +7,6 @@ target 'TodoConcept' do
 
   # Pods for TodoConcept
 pod 'Firebase/Core'
+pod ‘Firebase/Auth’
 
 end

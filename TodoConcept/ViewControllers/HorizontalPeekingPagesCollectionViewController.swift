@@ -9,14 +9,14 @@
 import UIKit
 
 class HorizontalPeekingPagesCollectionViewController: UICollectionViewController {
-    private var indexOfCellBeforeDragging = 0
+  
+  private var indexOfCellBeforeDragging = 0
     private var collectionViewFlowLayout: UICollectionViewFlowLayout {
         return collectionViewLayout as! UICollectionViewFlowLayout
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         collectionViewFlowLayout.minimumLineSpacing = 0
     }
 
@@ -26,7 +26,7 @@ class HorizontalPeekingPagesCollectionViewController: UICollectionViewController
         configureCollectionViewLayoutItemSize()
     }
 
-    func calculateSectionInset() -> CGFloat { // should be overridden
+    func calculateSectionInset() -> CGFloat {
         return 40
     }
 

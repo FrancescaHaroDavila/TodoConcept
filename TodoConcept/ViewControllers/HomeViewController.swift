@@ -7,14 +7,31 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
   
-
-
+  @IBOutlet weak var lblName: UILabel!
+  @IBOutlet weak var taskCount: UILabel!
+  @IBOutlet weak var lblDate: UILabel!
+  var user = User()
+  var card = Card()
+  @IBAction func logOutAction(_ sender: UIBarButtonItem) {
+    do {
+      try Auth.auth().signOut()
+    }
+    catch let signOutError as NSError {
+      print ("Error signing out: %@", signOutError)
+    }
+    
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    let initial = storyboard.instantiateInitialViewController()
+    UIApplication.shared.keyWindow?.rootViewController = initial
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    setData()
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -26,6 +43,16 @@ class HomeViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
-  
+  func setData(){
+    self.lblName.text = "Hello, " + user.name
+    self.taskCount.text = "You have " + String(card.tasks.count) + " tasks to do today."
+ 
+    let date = Date()
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateStyle = .long
+    let dateString = dateFormatter.string(from: date)
+    
+    self.lblDate.text = "TODAY: " + dateString
+  }
 }
 

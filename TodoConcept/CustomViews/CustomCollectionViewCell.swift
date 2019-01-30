@@ -10,6 +10,14 @@ import UIKit
 
 @IBDesignable
 class CustomCollectionViewCell: UICollectionViewCell {
+  
+  
+  @IBOutlet weak var taskPercentage: UILabel!
+  @IBOutlet weak var progressView: UIProgressView!
+  @IBOutlet weak var cardTitle: UILabel!
+  @IBOutlet weak var cardIcon: UIImageView!
+  @IBOutlet weak var cardTaskCount: UILabel!
+
   override func layoutSubviews() {
     super.layoutSubviews()
     self.layer.cornerRadius = 10
@@ -24,4 +32,5 @@ class CustomCollectionViewCell: UICollectionViewCell {
     self.layer.masksToBounds = false
   
   }
+  
 }
