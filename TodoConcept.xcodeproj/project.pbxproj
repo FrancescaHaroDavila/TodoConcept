@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DA48EA02201F4CA00038757 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48E9F2201F4C900038757 /* Task.swift */; };
-		8DA48EA22201F75700038757 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48EA12201F75700038757 /* User.swift */; };
-		8DA48EA42201F87600038757 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA48EA32201F87600038757 /* Card.swift */; };
-		8DA8604F21FB576C00A8A0DE /* HorizontalPeekingPagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA8604E21FB576C00A8A0DE /* HorizontalPeekingPagesCollectionViewController.swift */; };
+		8DA7810322049D8300D8192D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7810222049D8300D8192D /* TaskListViewController.swift */; };
+		8DA781052204A8FC00D8192D /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA781042204A8FC00D8192D /* CheckBox.swift */; };
+		8DA781072204AAE500D8192D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA781062204AAE500D8192D /* TableViewCell.swift */; };
+		8DA7905A22035D9200426E4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7905622035D9200426E4C /* LoginViewController.swift */; };
+		8DA7905B22035D9200426E4C /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7905722035D9200426E4C /* StartViewController.swift */; };
+		8DA7905C22035D9200426E4C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7905822035D9200426E4C /* HomeViewController.swift */; };
+		8DA7905D22035D9200426E4C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7905922035D9200426E4C /* SignUpViewController.swift */; };
+		8DA7905F22035DCD00426E4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA7905E22035DCD00426E4C /* Main.storyboard */; };
+		8DA7906122035DF700426E4C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7906022035DF700426E4C /* Card.swift */; };
+		8DA7906422035DFF00426E4C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7906222035DFE00426E4C /* User.swift */; };
+		8DA7906522035DFF00426E4C /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7906322035DFF00426E4C /* Task.swift */; };
 		8DA87F3A21F231330098043F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA87F3921F231330098043F /* AppDelegate.swift */; };
-		8DA87F3C21F231330098043F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA87F3B21F231330098043F /* HomeViewController.swift */; };
-		8DA87F3F21F231330098043F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA87F3D21F231330098043F /* Main.storyboard */; };
 		8DA87F4121F231360098043F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DA87F4021F231360098043F /* Assets.xcassets */; };
 		8DA87F4421F231360098043F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DA87F4221F231360098043F /* LaunchScreen.storyboard */; };
 		8DA9BEED21F9FA1C00876D98 /* CustomViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA9BEEC21F9FA1C00876D98 /* CustomViewTest.swift */; };
 		8DA9BEF121FA511F00876D98 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA9BEF021FA511F00876D98 /* CustomImageView.swift */; };
 		8DA9BEF321FA517E00876D98 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA9BEF221FA517E00876D98 /* CustomCollectionViewCell.swift */; };
-		8DAA04362200E370000C7627 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA04352200E370000C7627 /* StartViewController.swift */; };
-		8DAA04382200E378000C7627 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA04372200E378000C7627 /* LoginViewController.swift */; };
-		8DAA043A2200E37C000C7627 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAA04392200E37C000C7627 /* SignUpViewController.swift */; };
 		8DAA043E2200ECB4000C7627 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DAA043D2200ECB4000C7627 /* GoogleService-Info.plist */; };
 		8DAB4D8621F8CEDC00DD6C43 /* LDGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAB4D8521F8CEDB00DD6C43 /* LDGradientView.swift */; };
 		FDBD6FFBD8424630F452E846 /* Pods_TodoConcept.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7EEFA5449DE3E11023CA9E /* Pods_TodoConcept.framework */; };
@@ -30,23 +32,25 @@
 /* Begin PBXFileReference section */
 		07611F1D441006DD9275886E /* Pods-TodoConcept.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoConcept.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodoConcept/Pods-TodoConcept.release.xcconfig"; sourceTree = "<group>"; };
 		296FBBBC9EA95786906B20C1 /* Pods-TodoConcept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoConcept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodoConcept/Pods-TodoConcept.debug.xcconfig"; sourceTree = "<group>"; };
-		8DA48E9F2201F4C900038757 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		8DA48EA12201F75700038757 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		8DA48EA32201F87600038757 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		8DA8604E21FB576C00A8A0DE /* HorizontalPeekingPagesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalPeekingPagesCollectionViewController.swift; sourceTree = "<group>"; };
+		8DA7810222049D8300D8192D /* TaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		8DA781042204A8FC00D8192D /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		8DA781062204AAE500D8192D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8DA7905622035D9200426E4C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8DA7905722035D9200426E4C /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		8DA7905822035D9200426E4C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8DA7905922035D9200426E4C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8DA7905E22035DCD00426E4C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8DA7906022035DF700426E4C /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8DA7906222035DFE00426E4C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8DA7906322035DFF00426E4C /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		8DA87F3621F231330098043F /* TodoConcept.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoConcept.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA87F3921F231330098043F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8DA87F3B21F231330098043F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		8DA87F3E21F231330098043F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DA87F4021F231360098043F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DA87F4321F231360098043F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DA87F4521F231360098043F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DA9BEEC21F9FA1C00876D98 /* CustomViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewTest.swift; sourceTree = "<group>"; };
 		8DA9BEF021FA511F00876D98 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		8DA9BEF221FA517E00876D98 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
-		8DAA04352200E370000C7627 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		8DAA04372200E378000C7627 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		8DAA04392200E37C000C7627 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		8DAA043D2200ECB4000C7627 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DAB4D8521F8CEDB00DD6C43 /* LDGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDGradientView.swift; sourceTree = "<group>"; };
 		DD7EEFA5449DE3E11023CA9E /* Pods_TodoConcept.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TodoConcept.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,9 +80,9 @@
 		8DA48E9E2201F46000038757 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8DA48E9F2201F4C900038757 /* Task.swift */,
-				8DA48EA12201F75700038757 /* User.swift */,
-				8DA48EA32201F87600038757 /* Card.swift */,
+				8DA7906322035DFF00426E4C /* Task.swift */,
+				8DA7906222035DFE00426E4C /* User.swift */,
+				8DA7906022035DF700426E4C /* Card.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				8DA87F4221F231360098043F /* LaunchScreen.storyboard */,
-				8DA87F3D21F231330098043F /* Main.storyboard */,
+				8DA7905E22035DCD00426E4C /* Main.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -104,11 +108,11 @@
 		8DA8605221FB5A5300A8A0DE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8DAA04352200E370000C7627 /* StartViewController.swift */,
-				8DAA04372200E378000C7627 /* LoginViewController.swift */,
-				8DAA04392200E37C000C7627 /* SignUpViewController.swift */,
-				8DA87F3B21F231330098043F /* HomeViewController.swift */,
-				8DA8604E21FB576C00A8A0DE /* HorizontalPeekingPagesCollectionViewController.swift */,
+				8DA7810222049D8300D8192D /* TaskListViewController.swift */,
+				8DA7905822035D9200426E4C /* HomeViewController.swift */,
+				8DA7905622035D9200426E4C /* LoginViewController.swift */,
+				8DA7905922035D9200426E4C /* SignUpViewController.swift */,
+				8DA7905722035D9200426E4C /* StartViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -134,8 +138,8 @@
 		8DA87F3821F231330098043F /* TodoConcept */ = {
 			isa = PBXGroup;
 			children = (
-				8DA48E9E2201F46000038757 /* Model */,
 				8DA8605121FB5A3700A8A0DE /* Storyboard */,
+				8DA48E9E2201F46000038757 /* Model */,
 				8DA8605221FB5A5300A8A0DE /* ViewControllers */,
 				8DA9BEEA21F9F93100876D98 /* CustomViews */,
 				8DA8605021FB5A0A00A8A0DE /* Supporting Files */,
@@ -152,6 +156,8 @@
 				8DA9BEEC21F9FA1C00876D98 /* CustomViewTest.swift */,
 				8DA9BEF021FA511F00876D98 /* CustomImageView.swift */,
 				8DA9BEF221FA517E00876D98 /* CustomCollectionViewCell.swift */,
+				8DA781042204A8FC00D8192D /* CheckBox.swift */,
+				8DA781062204AAE500D8192D /* TableViewCell.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -226,8 +232,8 @@
 			files = (
 				8DA87F4421F231360098043F /* LaunchScreen.storyboard in Resources */,
 				8DA87F4121F231360098043F /* Assets.xcassets in Resources */,
-				8DA87F3F21F231330098043F /* Main.storyboard in Resources */,
 				8DAA043E2200ECB4000C7627 /* GoogleService-Info.plist in Resources */,
+				8DA7905F22035DCD00426E4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,33 +295,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DAA04382200E378000C7627 /* LoginViewController.swift in Sources */,
-				8DA87F3C21F231330098043F /* HomeViewController.swift in Sources */,
-				8DAA04362200E370000C7627 /* StartViewController.swift in Sources */,
+				8DA781072204AAE500D8192D /* TableViewCell.swift in Sources */,
+				8DA7905A22035D9200426E4C /* LoginViewController.swift in Sources */,
 				8DA9BEF321FA517E00876D98 /* CustomCollectionViewCell.swift in Sources */,
-				8DA48EA42201F87600038757 /* Card.swift in Sources */,
-				8DA48EA02201F4CA00038757 /* Task.swift in Sources */,
-				8DAA043A2200E37C000C7627 /* SignUpViewController.swift in Sources */,
 				8DA9BEF121FA511F00876D98 /* CustomImageView.swift in Sources */,
+				8DA7905B22035D9200426E4C /* StartViewController.swift in Sources */,
+				8DA7906522035DFF00426E4C /* Task.swift in Sources */,
+				8DA7905D22035D9200426E4C /* SignUpViewController.swift in Sources */,
 				8DA9BEED21F9FA1C00876D98 /* CustomViewTest.swift in Sources */,
-				8DA48EA22201F75700038757 /* User.swift in Sources */,
+				8DA7810322049D8300D8192D /* TaskListViewController.swift in Sources */,
+				8DA7905C22035D9200426E4C /* HomeViewController.swift in Sources */,
+				8DA7906122035DF700426E4C /* Card.swift in Sources */,
+				8DA781052204A8FC00D8192D /* CheckBox.swift in Sources */,
 				8DA87F3A21F231330098043F /* AppDelegate.swift in Sources */,
 				8DAB4D8621F8CEDC00DD6C43 /* LDGradientView.swift in Sources */,
-				8DA8604F21FB576C00A8A0DE /* HorizontalPeekingPagesCollectionViewController.swift in Sources */,
+				8DA7906422035DFF00426E4C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8DA87F3D21F231330098043F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8DA87F3E21F231330098043F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8DA87F4221F231360098043F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

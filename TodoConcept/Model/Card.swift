@@ -9,13 +9,18 @@
 import UIKit
 
 class Card: NSObject {
-
+  
   var title: String = ""
   var tasks: [Task] = []
-  var pictureName: String = ""
-  var picture: UIImage? {
-    return UIImage(named: self.pictureName)
+  var imageName: String = ""
+  var image: UIImage? {
+    return UIImage(named: self.imageName)
   }
   
- 
+  init(title: String, imageName: String) {
+    super.init()
+    self.title = title
+    self.imageName = imageName
+  }
+  
 }

@@ -17,7 +17,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
   @IBOutlet weak var cardTitle: UILabel!
   @IBOutlet weak var cardIcon: UIImageView!
   @IBOutlet weak var cardTaskCount: UILabel!
-
+  
   override func layoutSubviews() {
     super.layoutSubviews()
     self.layer.cornerRadius = 10
@@ -30,7 +30,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     self.layer.shadowOffset = CGSize(width: 5, height: 5)
     self.layer.shadowRadius = 5
     self.layer.masksToBounds = false
-  
+    
   }
   
 }
