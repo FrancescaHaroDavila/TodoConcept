@@ -9,13 +9,21 @@
 import UIKit
 
 class Task: NSObject {
-
+  
   var title: String = ""
   var check: Bool = false
   
-  override init(){
-    let formatter = DateFormatter()
-    formatter.dateFormat = "yyyy/MM/dd HH:mm"
-    let someDateTime = formatter.date(from: "2016/10/08 22:31")
+  init(title: String){
+    
+    super.init()
+    
+    let date = Date()
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateStyle = .short
+    let dateString = dateFormatter.string(from: date)
+    
+    self.title = title
+    
   }
 }
+

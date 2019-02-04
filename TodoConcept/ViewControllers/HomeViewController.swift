@@ -34,8 +34,9 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
   override func viewDidLoad() {
     super.viewDidLoad()
     collectionViewFlowLayout.minimumLineSpacing = 10
-    setData()
     createCard()
+    setData()
+    
   }
   
   override func viewDidAppear(_ animated: Bool) {
@@ -47,7 +48,17 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     // Dispose of any resources that can be recreated.
   }
   
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    if let destinationVC = segue.destination as? CardViewController {
+      let indexPaths : Array = cardCollectionView.indexPathsForSelectedItems! as Array
+      let indexPath : IndexPath = indexPaths[0]
+      let card = self.allCards[indexPath.row]
+      destinationVC.card = card
+    }
+  }
+  
   func setData(){
+    
     self.lblName.text = "Hello, " + user.name
     var totalTaskCount = 0
     for card in allCards{
@@ -69,9 +80,12 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     let homeCard = Card(title: "Home", imageName: "homeIcon")
     let workCard = Card(title: "Work", imageName: "workIcon")
     
+    let task = Task(title: "Meet clients")
+    workCard.tasks.append(task)
     allCards.append(personalCard)
     allCards.append(workCard)
     allCards.append(homeCard)
+    
   }
   
   func getTaskProgress(tasks: [Task] ) -> Float{

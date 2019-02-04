@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DA7810322049D8300D8192D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7810222049D8300D8192D /* TaskListViewController.swift */; };
+		8DA7810322049D8300D8192D /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7810222049D8300D8192D /* CardViewController.swift */; };
 		8DA781052204A8FC00D8192D /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA781042204A8FC00D8192D /* CheckBox.swift */; };
 		8DA781072204AAE500D8192D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA781062204AAE500D8192D /* TableViewCell.swift */; };
 		8DA7905A22035D9200426E4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7905622035D9200426E4C /* LoginViewController.swift */; };
@@ -32,7 +32,7 @@
 /* Begin PBXFileReference section */
 		07611F1D441006DD9275886E /* Pods-TodoConcept.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoConcept.release.xcconfig"; path = "Pods/Target Support Files/Pods-TodoConcept/Pods-TodoConcept.release.xcconfig"; sourceTree = "<group>"; };
 		296FBBBC9EA95786906B20C1 /* Pods-TodoConcept.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TodoConcept.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TodoConcept/Pods-TodoConcept.debug.xcconfig"; sourceTree = "<group>"; };
-		8DA7810222049D8300D8192D /* TaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		8DA7810222049D8300D8192D /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		8DA781042204A8FC00D8192D /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		8DA781062204AAE500D8192D /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		8DA7905622035D9200426E4C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		8DA8605221FB5A5300A8A0DE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				8DA7810222049D8300D8192D /* TaskListViewController.swift */,
+				8DA7810222049D8300D8192D /* CardViewController.swift */,
 				8DA7905822035D9200426E4C /* HomeViewController.swift */,
 				8DA7905622035D9200426E4C /* LoginViewController.swift */,
 				8DA7905922035D9200426E4C /* SignUpViewController.swift */,
@@ -303,7 +303,7 @@
 				8DA7906522035DFF00426E4C /* Task.swift in Sources */,
 				8DA7905D22035D9200426E4C /* SignUpViewController.swift in Sources */,
 				8DA9BEED21F9FA1C00876D98 /* CustomViewTest.swift in Sources */,
-				8DA7810322049D8300D8192D /* TaskListViewController.swift in Sources */,
+				8DA7810322049D8300D8192D /* CardViewController.swift in Sources */,
 				8DA7905C22035D9200426E4C /* HomeViewController.swift in Sources */,
 				8DA7906122035DF700426E4C /* Card.swift in Sources */,
 				8DA781052204A8FC00D8192D /* CheckBox.swift in Sources */,
@@ -451,7 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XPCZBW8PZ;
 				INFOPLIST_FILE = TodoConcept/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,7 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XPCZBW8PZ;
 				INFOPLIST_FILE = TodoConcept/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

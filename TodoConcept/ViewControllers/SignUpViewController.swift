@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
 
 
   @IBOutlet weak var imageView: UIImageView!
@@ -47,12 +47,42 @@ class SignUpViewController: UIViewController {
     }
 
   }
+  
   override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    super.viewDidLoad()
+    
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    
+    txtEmail.delegate = self
+    txtEmail.tag = 0
+    txtPassword.delegate = self
+    txtPassword.tag = 1
+    txtRetypePassword.delegate = self
+    txtRetypePassword.tag = 2
+  }
+  
+  @objc func keyboardWillShow(notification: NSNotification) {
+    if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+      if self.view.frame.origin.y == 0 {
+        self.view.frame.origin.y -= keyboardSize.height
+      }
     }
-
-
-
+  }
+  
+  @objc func keyboardWillHide(notification: NSNotification) {
+    if self.view.frame.origin.y != 0 {
+      self.view.frame.origin.y = 0
+    }
+  }
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    if let nextField = self.view.viewWithTag(textField.tag + 1) as? UITextField {
+      nextField.becomeFirstResponder()
+    } else {
+      textField.resignFirstResponder()
+    }
+    return false
+  }
+  
 }
