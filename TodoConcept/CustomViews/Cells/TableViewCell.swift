@@ -11,7 +11,5 @@ import UIKit
 class TableViewCell: UITableViewCell {
 
 
-  @IBOutlet weak var checkBox: CheckBox!
   @IBOutlet weak var taskLabel: UILabel!
-  
 }

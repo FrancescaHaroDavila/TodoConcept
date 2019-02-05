@@ -15,8 +15,9 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
   @IBOutlet weak var lblName: UILabel!
   @IBOutlet weak var taskCount: UILabel!
   @IBOutlet weak var lblDate: UILabel!
-  var user = User()
+  let user = User()
   var allCards: [Card] = []
+  let functions = Tools()
   
   @IBAction func logOutAction(_ sender: UIBarButtonItem) {
     do {
@@ -64,7 +65,11 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     for card in allCards{
       totalTaskCount += card.tasks.count
     }
-    self.taskCount.text = "You have " + String(totalTaskCount) + " tasks to do today."
+    if totalTaskCount == 1 {
+      self.taskCount.text = "You have 1 task to do today"
+    }else {
+      self.taskCount.text = String(totalTaskCount) + " Tasks"
+    }
     
     let date = Date()
     let dateFormatter = DateFormatter()
@@ -81,30 +86,15 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     let workCard = Card(title: "Work", imageName: "workIcon")
     
     let task = Task(title: "Meet clients")
+    let task2 = Task(title: "Movies")
     workCard.tasks.append(task)
+    personalCard.tasks.append(task2)
+    
     allCards.append(personalCard)
     allCards.append(workCard)
     allCards.append(homeCard)
     
   }
-  
-  func getTaskProgress(tasks: [Task] ) -> Float{
-    
-    if tasks.count == 0 {
-      return 0
-    }
-    
-    var completedTasks = 0
-    
-    for task in tasks {
-      if task.check == true {
-        completedTasks += 1
-      }
-    }
-    return Float(completedTasks/tasks.count)
-  }
-
-  
   
   //////CollectionView////////
   
@@ -191,10 +181,10 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     let card = self.allCards[indexPath.row]
     
     cell.cardTitle.text = card.title
-    cell.cardTaskCount.text = String(card.tasks.count) + " Tasks"
-    cell.progressView.progress = getTaskProgress(tasks: card.tasks)
+    functions.setTaskCountLabel(tasks: card.tasks, label: cell.cardTaskCount)
+    cell.progressView.progress = functions.getTasksProgress(tasks: card.tasks)
     cell.cardIcon.image = UIImage(named: card.imageName)
-    cell.taskPercentage.text = String(cell.progressView.progress) + " %"
+    functions.setTasksProgress(tasks: card.tasks, progressView: cell.progressView, progressLabel: cell.taskPercentage)
     
     return cell
   }
